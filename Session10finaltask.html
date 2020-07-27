@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<style>
+			body 
+			{
+   				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			}
+			form	
+			{
+   				margin: auto;
+  				width: 20%;
+  				border: 3px solid black;
+  				padding: 10px;
+			}
+			.inputContainer 
+			{
+   				width: 95%;
+   				margin-bottom: 10px;
+			}
+			.Field 
+			{
+   				width: 100%;
+   				padding: 6px;
+   				text-align: left;
+   				font-size: 15px;
+   				font-weight: 500;
+			}
+			.errspan 
+			{
+       				float: right;
+        			position: relative;
+				margin-right: 6px;
+        			margin-top: -20px;
+        			z-index: 2;
+        			color: gray;
+    			}
+			button.signinbox
+			{
+				background-color: skyblue;
+				width: 100%;
+				padding: 10px
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<h1 style="text-align: center; background-color: skyblue;">Sign in</h1>
+			<div class="inputContainer">
+				<input class="Field" type="text" placeholder="mail@example.com" />
+				<span class="fa fa-envelope-o errspan"></span>
+			</div>
+			<div class="inputContainer">
+				<input class="Field" type="password" placeholder="password"/>
+				<span class="fa fa-unlock-alt errspan"></span>
+			</div>
+			<div class="inputContainer">
+				<button type="submit" class="signinbox">SIGN IN</button>
+			</div>
+			<div class="inputContainer">
+    				<pre><span class="psw"><a href="#">Forgot password</a>			<a href="#">Register?</a></span></pre>
+  			</div>
+		</form>
+	</body>
+</html>
